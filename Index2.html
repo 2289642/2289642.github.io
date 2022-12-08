@@ -1,0 +1,95 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 100px;
+            background-color: beige;
+        }
+
+        #numero {
+            margin-top: 50px;
+            padding: 10px;
+        }
+
+        #button {
+            margin-top: 25px;
+            padding: 10px;
+        }
+
+        p {
+            margin-top: 25px;
+        }
+
+        div {
+            background-color: lightcoral;
+            width: 200px;
+            height: 50px;
+            padding-top: 25px;
+            margin-left:660px;
+            border: 2px solid black;
+            position: absolute;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Guess a number from 1 to 20</h1><br />
+    <input type="text" id="numero" required/> <br>
+    <input type="button" id="button" value="Envoyer" onclick="valider()">
+    <input type="button" id="button" value="Annuler" onclick="annuler()">
+    <p id="message"></p>
+
+    <div><a href="index2.html">Retry</a></div>
+
+
+
+
+
+    <script>
+        var bonChiffre = Math.ceil(Math.random() * 20)
+        console.log(bonChiffre)
+
+        realtrys = 4
+        trys = 3
+
+        function valider() {
+
+            var numero = document.getElementById("numero").value
+
+            if (numero == bonChiffre) {
+                message.innerHTML = "Vous avez bien deviné le nombre, bravo!"
+            } else if (trys == 0) {
+                message.innerHTML = "Désolé, vous avez perdu. Le nombre qu'on cherchait est " + bonChiffre
+            } else if (numero < bonChiffre) {
+                realtrys -= 1
+                trys -=1
+                message.innerHTML = "Incorrect, il vous reste " + realtrys + " essais. Veuillez entrer un nombre plus grand que " + numero + ", mais inférieur ou égal à 20"
+            } else if (numero > bonChiffre) {
+                realtrys -= 1
+                trys -=1
+                message.innerHTML = "Incorrect, il vous reste " + realtrys + " essais. Veuillez entrer un nombre plus petit que " + numero + ", mais supérieur ou égal à 0"
+            }
+        }
+
+
+        function annuler() {
+            message.innerHTML = "Désolé, vous avez perdu. Le nombre qu'on cherchait est " + bonChiffre
+        }
+
+
+
+    </script>
+</body>
+
+</html>
