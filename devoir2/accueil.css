@@ -1,0 +1,44 @@
+body{
+    background-image: url(arriere_plan_acceuil.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+h1{
+    margin-top: 40px;
+    font-weight: normal;
+}
+
+nav{
+    word-spacing:50px;
+}
+
+#link{
+    color: yellow;
+    border-bottom: 2px solid ;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 100px;
+    padding-bottom: 15px;
+}
+
+#link:hover{
+    font-size: 30px;
+}
+
+#title{
+    font-size:40px ;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 1000px;
+    margin:auto;
+    border-bottom: 1px solid white;
+    line-height: 75px;
+}
+
+p{
+    padding-top: 100px;
+    width: 1000px;
+    margin:auto;
+}

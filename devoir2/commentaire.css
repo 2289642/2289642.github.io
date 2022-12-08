@@ -1,0 +1,116 @@
+header{
+    color:white;
+    background-color: #343434;
+    margin-left: -8px;
+    width: 101.03%;
+    margin-top: -23px; 
+    height: 215px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+nav{
+    line-height: 100px;
+    word-spacing: 50px;
+}
+
+#link{
+    color: gold;
+    border-bottom: 2px solid ;
+    text-decoration: none;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+#link:hover{
+    font-size: 30px;
+}
+
+main{
+    background-image: url(customer-banner.jpg);
+    margin-top:50px;
+    width: 101.03%;
+    height: 1250px;
+    margin-left: -8px;
+}
+
+h2{
+    color:gold;
+    padding-top:20px;
+    border-bottom: 5px solid #343434;
+    margin-left: 75px;
+    width: 175px;
+    padding-bottom: 20px;
+}
+
+#flex-container{
+    text-align: center;
+    display: flex;
+}
+#flex1{
+    background-color: white;
+    width: 40%;
+    margin-left: 75px;
+    padding: 25px;
+    box-shadow: 5px 5px 8px #888888;
+}
+#flex2{
+    background-color: white;
+    width: 40%;
+    margin-left: 50px;
+    padding: 25px;
+    box-shadow: 5px 5px 8px #888888;
+}
+#flex3{
+    background-color: white;
+    padding: 25px;
+    margin-left: 75px;
+    box-shadow: 5px 5px 8px #888888;
+    margin-top:75px;
+    width: 40%;
+}
+
+h3{
+    font-size: 22px;;
+}
+
+#star{
+    color: gold;
+}
+
+p{
+color: gray;
+width: 300px;
+margin: auto;
+}
+
+img{
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+footer{
+    height: 600px;
+    background-color: #343434;
+    margin-top: 75px;
+    text-align: center;
+}
+
+h5{
+    font-size: 25px;
+    color: gold;
+    padding-top:50px ;
+}
+
+p1{
+    color:white;
+    
+}
+
+#icon{
+    word-spacing: 50px;
+    color: white;
+    margin-top: 50px;
+}
